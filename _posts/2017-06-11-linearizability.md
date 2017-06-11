@@ -1,3 +1,8 @@
+---
+layout: post
+title: 浅析分布式系统中的 Linearizability
+---
+
 在分布式系统里，出于可靠性（reliability）或者性能的考虑，数据通常会被复制为多个副本。因此，系统需要定义一组协议，来规定用户读写多副本时的行为。这组协议称之为 [consistency model](https://en.wikipedia.org/wiki/Consistency_model)。
 最终一致性（eventually consistency），linearizability（atomic consistency）是不同类型的一致性模型。下图是最终一致性模型的示例，用户 B/C 在读取不同的副本时看到了不同的 x 的值。请注意，用户A，B，C的操作是完全串行执行的，即操作在时间轴上没有重叠。C 读取操作发生在 B 之后，却读到了过期的值。可见，最终一致性是一个较弱的一致性模型，用户需要自己解决读取到过期数据的问题。
 
