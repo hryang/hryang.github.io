@@ -3,6 +3,11 @@ layout: post
 title: Sample and Hold - 基于采样的指标测量算法
 ---
 
+<head>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
 
 ## 问题定义
 
