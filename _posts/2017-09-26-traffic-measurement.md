@@ -1,14 +1,7 @@
 ---
 layout: post
 title: Sample and Hold - 基于采样的指标测量算法
-published: false
 ---
-
-<head>
-    <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-</head>
 
 ## 问题定义
 
@@ -44,5 +37,3 @@ published: false
 * Large flow 没有被识别的概率（false negative）：\\((1-p)^T = (1-\frac{O}{T})^T = e^{-O}\\)
 * flow 实际发送的流量和被统计的流量差：在flow被第一次采样之前，miss的字节数服从[几何概率分布](https://zh.wikipedia.org/wiki/幾何分佈)，miss x 字节的概率为 \\(p=(1-p)^x*p\\)。因此 \\(E[c-s]=\frac{1}{p}\\)，\\(SD[c-s] = \frac{\sqrt{1-p}}{p}\\)
 
-
-$$ \frac{d\mathcal L_{Gen}}{dt} = \frac{\partial \mathcal L_{Forger}}{\partial \theta_{Gen}} \ \Delta_{Dis} = \eta_D \frac{\partial \mathcal L_{Curator}}{\partial \theta_{Dis}} \ $$
