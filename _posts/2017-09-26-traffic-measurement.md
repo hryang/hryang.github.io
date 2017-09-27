@@ -3,7 +3,6 @@ layout: post
 title: Sample and Hold - 基于采样的指标测量算法
 ---
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 ## 问题定义
 
